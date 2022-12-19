@@ -61,7 +61,7 @@ public class Basetest {
         //         eyesManager = new EyeManger(driver, "The Internet");
 
         // to test tables
-        driver.get("https://the-internet.herokuapp.com/tables");
+      //  driver.get("https://the-internet.herokuapp.com/tables");
         eyesManager = new EyeManger(driver, "The Internet");
          tablesPage = new SortableDataTablesPage(driver);
 
@@ -75,7 +75,7 @@ public class Basetest {
      @AfterMethod
     public void tearDown(){
 
-   //    driver.quit();
+       driver.quit();
         // to close eye if we need
          eyesManager.abort();
     }

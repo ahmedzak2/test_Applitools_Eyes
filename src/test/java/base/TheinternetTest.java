@@ -17,6 +17,7 @@ public class TheinternetTest extends  Basetest{
         eyesManager.setBatchName("Sort Table");
 
     }
+
     @Test
     public void testSortByLastName(){
         tablesPage.sortLastNameColumn();
